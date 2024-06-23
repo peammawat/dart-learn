@@ -1,8 +1,17 @@
 import 'dart:io';
+import 'dart:math';
 
 void main() {
   stdout.write('กำนวนค่า taxi ตามจำนวนกิโลที่นั่ง = ');
-  int km = int.parse(stdin.readLineSync()!);
+  double km = double.parse(stdin.readLineSync()!);
+
+  double decimalPart = km - km.floor();
+
+  if (decimalPart < 0.5) {
+    km = km.floorToDouble();
+  } else {
+    km = km.ceilToDouble();
+  }
 
   if (km <= 10) {
     km = km - 1;
