@@ -1,7 +1,7 @@
 import 'dart:io';
 
 void main() {
-  stdout.write('กำนวนกี่โลที่นั่ง = ');
+  stdout.write('กำนวนค่า taxi ตามจำนวนกิโลที่นั่ง = ');
   int km = int.parse(stdin.readLineSync()!);
 
   if (km <= 10) {
