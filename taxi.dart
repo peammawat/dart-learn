@@ -2,7 +2,7 @@ import 'dart:io';
 import 'dart:math';
 
 void main() {
-  stdout.write('กำนวนค่า taxi ตามจำนวนกิโลที่นั่ง = ');
+  stdout.write('คำนวนค่า taxi ตามจำนวนกิโลที่นั่ง = ');
   double km = double.parse(stdin.readLineSync()!);
 
   double decimalPart = km - km.floor();
